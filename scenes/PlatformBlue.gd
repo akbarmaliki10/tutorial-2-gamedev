@@ -11,5 +11,15 @@ func _process(delta):
 	if Input.is_action_pressed("move_up"):
 		move_local_y(-speed * delta)
 	
+	if Input.is_action_pressed("move_right"):
+		move_local_x(speed * delta)
+
+	if Input.is_action_pressed("move_left"):
+		move_local_x(-speed * delta)
+
 	if Input.is_action_pressed("move_down"):
 		move_local_y(speed * delta)
+
+
+func _on_BlueShip_mouse_entered():
+	pass # Replace with function body.

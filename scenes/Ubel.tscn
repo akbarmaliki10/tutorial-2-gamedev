@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/ubel.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 103.5, 257.75 )
+
+[node name="Ubel" type="RigidBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 283.5, 250.25 )
+shape = SubResource( 1 )
+
+[node name="Ubel" type="Sprite" parent="."]
+position = Vector2( 296, 249 )
+texture = ExtResource( 1 )
