@@ -44,4 +44,10 @@ Setelah saya coba mengubah atribut mass dan weight pada node BlueShip tidak terj
 Yang terjadi adalah text "Reached Objective!" tidak pernah tercetak pada panel output ketika BlueShip masuk kedalam area objective karena fungsi body_entered akan mendeteksi node/objek yang memiliki collision shape masuk kedalam area mereka.
 ```
 - Pada scene MainLevel, coba manipulasi atribut Position, Rotation, dan Scale milik node BlueShip secara bebas. Apa yang terjadi pada visualisasi BlueShip di Viewport?
+```
+Visualisasi BlueShip akan bergerak di sumbu x dan y, selain itu BlueShip akan berotasi sesuai dengan derajat yang kita mau.
+```
 - Pada scene MainLevel, perhatikan nilai atribut Position node PlatformBlue, StonePlatform, dan StonePlatform2. Mengapa nilai Position node StonePlatform dan StonePlatform2 tidak sesuai dengan posisinya di dalam scene (menurut Inspector) namun visualisasinya berada di posisi yang tepat?
+```
+Karena positionnya relative dengan node parentnya yaitu MainLevel.
+```

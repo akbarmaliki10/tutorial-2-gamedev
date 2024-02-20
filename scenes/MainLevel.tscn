@@ -22,22 +22,23 @@ script = ExtResource( 3 )
 position = Vector2( 70, 0 )
 
 [node name="BlueShip" parent="." instance=ExtResource( 2 )]
-position = Vector2( 79, 204 )
+position = Vector2( 100, 100 )
+rotation = -2.93215
 
 [node name="ObjectiveArea" type="Area2D" parent="."]
 script = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectiveArea"]
-position = Vector2( 460, 233 )
+position = Vector2( 268, 67 )
 shape = SubResource( 1 )
 
 [node name="Linux" type="Sprite" parent="."]
-position = Vector2( 515, 302 )
+position = Vector2( 517, 303 )
 scale = Vector2( 1.1125, 0.676286 )
 z_index = -1
 texture = ExtResource( 5 )
 
-[node name="RigidBody2D" parent="." instance=ExtResource( 6 )]
-position = Vector2( -194, -7 )
+[node name="Ubel" parent="." instance=ExtResource( 6 )]
+position = Vector2( -214, -68 )
 
 [connection signal="body_entered" from="ObjectiveArea" to="ObjectiveArea" method="_on_ObjectiveArea_body_entered"]
